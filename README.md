@@ -5,6 +5,6 @@ Next.js build files for [jacobaulenback.ca](https://jacobaulenback.ca)
 #### Build Instructions
 1. Built with Next.js. (`npm install next`)
 2. `npm run build`
-3. Static site is exported to `out/`
+3. Static site is exported to `.out/`
 
 
