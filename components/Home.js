@@ -5,8 +5,6 @@ export default ({children}) => (
         <title>Jacob Aulenback</title>
         <link rel="icon" href="/favicon.ico" />
    </Head>
-	<header>
-</header>
 	{children}
     <footer>
         <a

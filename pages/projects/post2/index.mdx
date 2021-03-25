@@ -1,0 +1,34 @@
+import BlogPost from '../../../components/BlogPost'
+
+export const meta = {
+  title: 'Test Post 2 in Projects',
+  description: 'A second test post with the category of Projects',
+  date: 'Mar 24, 2021',
+  readTime: 1,
+  category: 'projects'
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+## Test some formatting 
+
+This is the text of the post This is the text of the post This is the text of the post This is the text of the post
+This is the text of the post This is the text of the post This is the text of the post This is the text of the post
+This is the text of the post This is the text of the post This is the text of the post This is the text of the post
+This is the text of the post This is the text of the post This is the text of the post This is the text of the post
+
+**THIS IS BOLD TEXT**
+
+*THIS IS ITALIC TEXT*
+
+> THIS IS A BLOCK QUOTE
+>> THIS IS A NEST BLOCK QUOTE
+
+1. These
+2. Are
+3. Items in
+4. a list
+
+  THIS IS A CODE BLOCK
+
+  ![THIS IS AN IMAGE TEST](/github-mark.png)
