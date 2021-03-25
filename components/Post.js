@@ -8,7 +8,7 @@ export const Post = ({ post }) => {
   } = post;
 
   return (
-    <div class='entry'>
+    <div className='entry'>
     <a href={ link}>
       <HeadPost meta={meta} />
       <Link href={ link}>

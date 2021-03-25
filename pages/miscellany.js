@@ -5,7 +5,7 @@
 
 // export default function Home() {
 //   return (
-	  
+
 //   <Layout>
 //     <div className="container">
 //       <Head>
@@ -24,32 +24,30 @@
 //       </div>
 
 //         </div>
-  
-//   </Layout> 
+
+//   </Layout>
 //   )
 // }
 //
-import Head from 'next/head'
-const select = function(post){
-  console.log(post)
-  if(post.module.meta.category == "misc"){
-  return <Post key={post.link} post={post} />
+import Head from "next/head";
+const select = function (post) {
+  console.log(post);
+  if (post.module.meta.category == "misc") {
+    return <Post key={post.link} post={post} />;
   }
-}
+};
 
 import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
 
 export default function IndexPage() {
   return (
-    
     <>
-
       <Head>
         <title>Miscellany</title>
       </Head>
-
-      {posts.map(select)}
+      <h1 className="pageTitle">Miscellany</h1>
+      <div className="postList">{posts.map(select)}</div>
     </>
   );
 }

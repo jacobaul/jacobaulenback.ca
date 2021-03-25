@@ -5,7 +5,7 @@
 
 // export default function Home() {
 //   return (
-	  
+
 //   <Layout>
 //     <div className="container">
 //       <Head>
@@ -24,16 +24,16 @@
 //       </div>
 
 //         </div>
-  
-//   </Layout> 
+
+//   </Layout>
 //   )
 // }
-const select = function(post){
-  console.log(post)
-  if(post.module.meta.category == "projects"){
-  return <Post key={post.link} post={post} />
+const select = function (post) {
+  console.log(post);
+  if (post.module.meta.category == "projects") {
+    return <Post key={post.link} post={post} />;
   }
-}
+};
 
 import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
@@ -41,12 +41,8 @@ import { posts } from "../getAllPosts";
 export default function IndexPage() {
   return (
     <>
-    <h1 className="pageTitle">
-          Projects
-        </h1>
-        <div class='postList'>
-      {posts.map(select)}
-      </div>
+      <h1 className="pageTitle">Projects</h1>
+      <div className="postList">{posts.map(select)}</div>
     </>
   );
 }

@@ -131,7 +131,7 @@ code {
 .card {
   margin: 1rem;
   height: 175px;
-  flex-basis: 4%;
+  flex-basis: 45%;
   padding: 1.5rem;
   text-align: center;
   color: inherit;
@@ -196,11 +196,11 @@ code {
   margin-right: 1rem;
 }
 .content {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .postList {
   display: flex;
