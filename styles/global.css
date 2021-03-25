@@ -124,11 +124,11 @@ code {
 }
 
 .grid {
+	
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	flex-wrap: wrap;
-
 	max-width: 800px;
 	margin-top: 3rem;
 }
