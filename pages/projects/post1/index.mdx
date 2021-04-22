@@ -1,34 +1,32 @@
 import BlogPost from '../../../components/BlogPost'
 
 export const meta = {
-  title: 'Test Post in Projects',
-  description: 'A test post with the category of Projects',
+  title: 'This is an Example Blog Post',
+  description: 'Posts have descriptions and some metadata which are combined to create this list',
   date: 'Mar 24, 2021',
   readTime: 1,
-  category: 'misc'
+  category: 'projects'
 }
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-## Test some formatting 
+## Posts are written in Markdown 
 
-This is the text of the post This is the text of the post This is the text of the post This is the text of the post
-This is the text of the post This is the text of the post This is the text of the post This is the text of the post
-This is the text of the post This is the text of the post This is the text of the post This is the text of the post
-This is the text of the post This is the text of the post This is the text of the post This is the text of the post
+Each post is writted in clean, easy to read markdown files. All the usual formatting (and more) is allowed. Each markdown style will be compiled automatically into a pretty web page at build time.
+ 
+**TEXT CAN BE BOLD** *OR ITALIC*
 
-**THIS IS BOLD TEXT**
+> OR CAN APPEAR IN
+> A QUOTE BLOCK
 
-*THIS IS ITALIC TEXT*
+### Sub headings are simple
 
-> THIS IS A BLOCK QUOTE
->> THIS IS A NEST BLOCK QUOTE
+1. Ordered lists are easy too
+2. Easier than writing it in Word even
+3. All the hard work is done behind the scenes.
 
-1. These
-2. Are
-3. Items in
-4. a list
+Inserting images is clean and easy as well. 
 
-  THIS IS A CODE BLOCK
+![THIS IS AN IMAGE TEST](/github-mark.png)
 
-  ![THIS IS AN IMAGE TEST](/github-mark.png)
+Markdown allows you to write articles in an expressive way without worrying about formatting details. All the formatting can be tweaked globally with CSS for changing design styles.
