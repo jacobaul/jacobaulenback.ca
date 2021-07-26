@@ -6,7 +6,8 @@ export default ({children}) => (
         <link rel="icon" href="/favicon.ico" />
    </Head>
 	{children}
-    <footer>
+  <div class="footer">
+
         <a
           href="http://www.gnuterrypratchett.com/genclacks.php"
           target="_blank"
@@ -14,7 +15,11 @@ export default ({children}) => (
         >
         <img src="/clacks.gif" alt="Clacks" height="25"></img>
         </a>
-      </footer>
+
+      </div>
+      
+    
 
   </div>
+  
 )
